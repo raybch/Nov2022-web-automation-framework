@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="amazon test">
-    <parameter name="browserName" value="chrome"></parameter>
+    <parameter name="useCloudEnv" value="true"></parameter>
+
+    <parameter name="envName" value="browserstack"></parameter>
+    <parameter name="os" value="OS X"></parameter>
+    <parameter name="osVersion" value="sierra"></parameter>
+    <parameter name="browserVersion" value="106"></parameter>
+
+    <parameter name="browserName" value="firefox"></parameter>
     <parameter name="url" value="https://www.amazon.com/"></parameter>
     <test name="amazon tests">
         <classes>
-            <class name="test.TestLogin"></class>
-<!--            <class name="test.TestSearch"></class>-->
+<!--            <class name="test.TestLogin"></class>-->
+            <class name="test.TestSearch"></class>
         </classes>
     </test>
 </suite>

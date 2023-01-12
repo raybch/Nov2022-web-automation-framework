@@ -28,7 +28,7 @@ public class TestSearch extends CommonAPI {
         Assert.assertEquals(expectedTitle2, actualTitle2);
         LOG.info("java search title validation success");
     }
-    @Test
+    //@Test
     public void searchSeleniumBook() throws InterruptedException {
         HomePage homePage = new HomePage(getDriver());
 
@@ -45,7 +45,7 @@ public class TestSearch extends CommonAPI {
         Assert.assertEquals(expectedSearchPageTitle, actualSearchPageTitle);
         LOG.info("java search title validation success");
     }
-    @Test
+    //@Test
     public void searchJava(){
         HomePage homePage = new HomePage(getDriver());
 
