@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
+import utility.ConnectDB;
 
 public class TestLogin extends CommonAPI {
     
@@ -16,6 +17,7 @@ public class TestLogin extends CommonAPI {
     public void invalidEmailAddress() {
         HomePage homePage = new HomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
+        String email = ConnectDB.getTableColumnData("select * from cred","password").get(0);
 
         homePage.hoverOverFloatingMenu(getDriver());
         homePage.clickOnLoginButton();
@@ -24,7 +26,7 @@ public class TestLogin extends CommonAPI {
         Assert.assertEquals(title, "Amazon Sign-In");
         LOG.info("login title page validation success");
 
-        loginPage.typeEmailAddress("abcdefg@gmail");
+        loginPage.typeEmailAddress(email);
         loginPage.clickOnConnectButton();
 
         String error = loginPage.getErrorMessage();
