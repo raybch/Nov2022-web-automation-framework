@@ -67,7 +67,7 @@ public class ReadFromExcel {
     }
 
     public static void main(String[] args) throws IOException {
-
-
+        ReadFromExcel read = new ReadFromExcel("C:\\Users\\PNT\\IdeaProjects\\Nov2022AutomationFramework\\data\\titles.xlsx", "test data");
+        read.getCellValueForGivenHeaderAndKey("key","home page title");
     }
 }

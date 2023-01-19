@@ -4,9 +4,9 @@
     <parameter name="useCloudEnv" value="false"></parameter>
 
     <parameter name="envName" value="browserstack"></parameter>
-    <parameter name="os" value="OS X"></parameter>
-    <parameter name="osVersion" value="sierra"></parameter>
-    <parameter name="browserVersion" value="106"></parameter>
+    <parameter name="os" value="windows"></parameter>
+    <parameter name="osVersion" value="10"></parameter>
+    <parameter name="browserVersion" value="100"></parameter>
 
     <parameter name="browserName" value="chrome"></parameter>
     <parameter name="url" value="https://www.amazon.com/"></parameter>
@@ -14,6 +14,7 @@
         <classes>
 <!--            <class name="test.TestLogin"></class>-->
             <class name="test.TestSearch"></class>
+            <class name="test.TestPurchase"></class>
         </classes>
     </test>
 </suite>

@@ -31,6 +31,9 @@ public class HomePage extends CommonAPI {
     @FindBy(css = "#searchDropdownBox")
     WebElement menuDropdown;
 
+    @FindBy(xpath = "//div[@id='nav-cart-text-container']")
+    WebElement cartLink;
+
     //reusable steps
     public void typeItemToSearch(String item){
         type(searchField, item);
@@ -55,5 +58,9 @@ public class HomePage extends CommonAPI {
     public void clickOnLoginButton(){
         clickOn(loginButton);
         LOG.info("click on login button success");
+    }
+    public void clickOnCartLink(){
+        clickOn(cartLink);
+        LOG.info("click on cart link success");
     }
 }
