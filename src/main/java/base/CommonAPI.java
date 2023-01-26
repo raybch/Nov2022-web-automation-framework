@@ -45,7 +45,7 @@ public class CommonAPI {
     String password = Utility.decode(Utility.getProperties().getProperty("browserstack.password"));
     public WebDriver driver;
 
-    //report setup from line 37 to 94
+    //report setup from line 48 to 105
     public static com.relevantcodes.extentreports.ExtentReports extent;
 
     @BeforeSuite

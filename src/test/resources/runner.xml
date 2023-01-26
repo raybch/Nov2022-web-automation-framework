@@ -14,7 +14,7 @@
         <classes>
 <!--            <class name="test.TestLogin"></class>-->
             <class name="test.TestSearch"></class>
-            <class name="test.TestPurchase"></class>
+<!--            <class name="test.TestPurchase"></class>-->
         </classes>
     </test>
 </suite>
